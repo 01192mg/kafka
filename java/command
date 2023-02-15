@@ -1,0 +1,6 @@
+// start server
+bin/zookeeper-server-start.sh config/zookeeper.properties
+bin/kafka-server-start.sh config/server.properties
+
+// create topic
+bin/kafka-topics.sh --create --topic topic5 --bootstrap-server localhost:9092 --partitions 3
